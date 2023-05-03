@@ -1,0 +1,188 @@
+body{
+    background-color: #F7F7F7;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans';
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#navbar{
+    width: 100vw;
+    height: 10vh;
+    z-index: 100;
+    background-color: #F7F7F7;
+}
+
+#linksContainer{
+    width: 100%;
+    align-items: center;
+    margin-top: 1.5%;
+}
+
+#navbar a{
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+#navbar a:active{
+    color: #000000;
+}
+
+.blackLink{
+    color: #000000;
+}
+
+.greyLink{
+    color: #D3D3D3;
+}
+
+#burgerMenuIcon{
+    visibility: hidden;
+    color: #000000;
+}
+
+#ourAppContainer{
+    background-color: #FFFFFF;
+    height: 110vh;
+}
+
+#line{
+    width: 7.32vw;
+    border: 1px solid #178A1F;
+    border-radius: 3px;
+    margin:auto;
+    margin-top: 1%;
+}
+
+#ourAppTextContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    align-content: center;
+    text-align: center;
+}
+
+#ourAppParagraphContainer{
+    margin-top: 2%;
+    height: 30.08vh;
+    width: 79.79vw;
+}
+
+.ourAppInput{
+    width: 75vw;
+    height: 8vh;
+    padding-left: 20px
+}
+
+#ourAppInputsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 40vw;
+    align-items: center;
+}
+
+#signUpBtn{
+    height: 8vh;
+    width: 19.83vw;
+    background-color: #178A1F;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    margin-left: -71%;
+}
+
+#footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50.24vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    justify-content: space-between;
+}
+
+#footerFirstPart{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    gap: 10%;
+    margin-top: 7%;
+}
+
+#footerListing{
+    display: flex;
+    flex-direction: column;
+}
+
+#footerListing a{
+    margin-top: 30%;
+    text-decoration: none;
+    color: #000000;
+}
+
+#socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6%;
+    gap: 35%;
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar a{
+        margin-left: 10%;
+    }
+
+    #line{
+        width: vw;
+        border-radius: 3px;
+        margin-left: 40%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    .ourAppInput{
+        width: 46.04vw;
+        height: 8vh;
+        padding-left: 20px
+    }
+    
+    #ourAppParagraphContainer{
+        height: 25vh;
+    }
+
+    #signUpBtn{
+        height: 8vh;
+        width: 23.86vw;
+        margin-left: -32%;
+    }
+
+    #socialMediaIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15%;
+        gap: 25%;
+    }
+
+    #socialMediaIcons img{
+        height: 35px;
+        width: 40px;
+    }
+
+    #footerContainer{
+        height: 35vh;
+    }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    
+}

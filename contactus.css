@@ -1,0 +1,197 @@
+body{
+    background-color: #F7F7F7;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans';
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#navbar{
+    width: 100vw;
+    height: 10vh;
+    z-index: 100;
+    background-color: #F7F7F7;
+}
+
+#linksContainer{
+    width: 100%;
+    align-items: center;
+    margin-top: 1.5%;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 5%;
+}
+
+#navbar a:nth-child(n + 2){
+    color: #D3D3D3;
+}
+
+#navbar a:nth-child(n + 4){
+    color: #000000;
+}
+
+#burgerMenuIcon{
+    visibility: hidden;
+    color: #000000;
+}
+
+#contactUsMainContainer{
+    background-color: #FFFFFF;
+    height: 140vh;
+}
+
+#line{
+    width: 7.32vw;
+    border: 1px solid #178A1F;
+    border-radius: 3px;
+    margin:auto;
+    margin-top: 1%;
+}
+
+#contactusTextContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    align-content: center;
+    text-align: center;
+}
+
+#contactUsParagraphContainer{
+    height: 30.08vh;
+    width: 79.79vw;
+}
+
+#contactUsInputsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 40vw;
+    align-items: center;
+}
+
+.contactUsInput{
+    width: 75vw;
+    height: 8vh;
+    padding-left: 20px;
+}
+
+.contactUsInputTextArea{
+    width: 75vw;
+    height: 16vh;
+    border: 1px solid #707070;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+#contactUsBtn{
+    height: 8vh;
+    width: 19.83vw;
+    background-color: #178A1F;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    margin-left: -71%;
+}
+
+#footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50.24vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    justify-content: space-between;
+}
+
+#footerFirstPart{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    gap: 10%;
+    margin-top: 7%;
+}
+
+#footerListing{
+    display: flex;
+    flex-direction: column;
+}
+
+#footerListing a{
+    margin-top: 30%;
+    text-decoration: none;
+    color: #000000;
+}
+
+#socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6%;
+    gap: 35%;
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar a{
+        margin-left: 10%;
+    }
+
+    #line{
+        width: 14.64vw;
+        border-radius: 3px;
+        margin-left: 40%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    #contactUsMainContainer{
+        height: 100vh;
+    }
+
+    #contactUsParagraphContainer{
+        height: 17vh;
+    }
+
+    #contactUsParagraphContainer p{
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: -2%;
+    }
+
+    #contactusTextContainer{
+        margin-top: 2%;
+    }
+
+    #contactUsBtn{
+        margin-left: -77%;
+    }
+
+    #socialMediaIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 15%;
+        gap: 25%;
+    }
+
+    #socialMediaIcons img{
+        height: 35px;
+        width: 40px;
+    }
+
+    #footerContainer{
+        height: 35vh;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    
+}

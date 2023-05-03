@@ -1,0 +1,308 @@
+    body{
+        background-color: #F7F7F7;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        font-family: 'Open sans';
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    #navbar{
+        width: 100vw;
+        height: 10vh;
+        z-index: 100;
+        background-color: #F7F7F7;
+    }
+
+    #linksContainer{
+        width: 100%;
+        align-items: center;
+        margin-top: 1.5%;
+    }
+
+    #navbar a{
+        text-decoration: none;
+        color: #000000;
+        margin-left: 5%;
+    }
+
+    #navbar a:nth-child(n + 2){
+        color: #D3D3D3;
+    }
+    
+    #burgerMenuIcon{
+        visibility: hidden;
+        color: #000000;
+    }
+
+    #stadiumImage{
+        width: 100vw;
+        height: 75vh;
+        position: relative;
+        margin: 0;
+    }
+
+    #stadiumImage img{
+        width: 100vw;
+        height: 96.8vh;
+        margin-top: -10%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #pic2{
+        position: absolute;
+        opacity: 0.6;
+        z-index: 2;
+        margin: 0;
+    }
+
+    #contentOnPic{
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        margin-left: 10%;
+        margin-top: 6%;
+    }
+
+    #contentOnPic2{
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        color: #FFFFFF;
+        margin-left: 10%;
+        margin-top: 15%;
+        font-size: larger;
+    }
+
+    #descriptionAboutStadium{
+        width: 60vw;
+    }
+
+    #btnsContainer{
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        margin-top: 10%;
+    }
+
+    #btnsContainer  button{
+        width: 13.1vw;
+        height: 6.4vh;
+        outline: none;
+        color: #FFFFFF;
+    }
+
+    #btn1{
+        background-color: #178A1F;
+        border: none;
+    }
+
+    #btn2{
+        margin-left: 3%;
+        background-color: transparent;
+        border: 2px solid #178A1F;
+    }
+
+    #btn2 a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    #line{
+        width: 7.32vw;
+        border: 1px solid #178A1F;
+        border-radius: 3px;
+        margin-left: 30%;
+        margin-top: 7%;
+    }
+
+    #contentOnPic h3{
+        font-weight: 1000;
+    }
+
+    #mainContentContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFFFFF;
+        margin-top: 0;
+    }
+
+    #line2 {
+        width: 100px;
+        border: 1px solid #178A1F;
+        border-radius: 3px;
+    }
+
+    #aboutAppContainer{
+        display: flex;
+        flex-direction: column;
+        width: 51vw;
+        text-align: center;
+    }
+
+
+    .aboutAppContainerLines{
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 8%;
+        margin-top: 10%;
+        align-content: space-between;
+    }
+
+    #blackPartContainer{
+        display: flex;
+        flex-direction: column;
+        background-color: #262626;
+        color: #FFFFFF;
+        height: 23.52vh;
+        width: 100%;
+        align-items: center;
+    }
+
+    #blackPartContainer button{
+        height: 6.88vh;
+        width: 19.83vw;
+        background-color: #178A1F;
+        outline: none;
+        border: none;
+        color: #FFFFFF;
+    }
+
+    #blackPartContainer div{
+        margin-top: 1%;
+    }
+
+    #footerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50.24vh;
+        width: 100%;
+        background-color: #F7F7F7;
+        justify-content: space-between;
+    }
+
+    #footerFirstPart{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+        gap: 10%;
+        margin-top: 7%;
+    }
+
+    #footerListing{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerListing a{
+        margin-top: 30%;
+        text-decoration: none;
+    }
+
+    
+    #socialMediaIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 6%;
+        gap: 35%;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+        #navbar a{
+            margin-left: 10%;
+        }
+        
+        #contentOnPic{
+            margin-left: 35%;
+        }
+
+        #line{
+            width: 14.64vw;
+            border-radius: 3px;
+            margin-left: 30%;
+            margin-top: 7%;
+        }
+
+        #descriptionAboutStadium{
+            width: 43.15vw;
+            font-size: 13px;
+            margin-top: 10%;
+            margin-left: 40%;
+            justify-content: center;
+        }
+
+        #btn2{
+            visibility: hidden;
+        }
+
+        #btnsContainer{
+            margin-left: 65%;
+        }
+
+        #btnsContainer  button{
+            height: 10.5vh;
+            width: 19vw;
+        }
+
+        #mainContentContainer h1{
+            font-size: 20px;
+            margin-top: 7%;
+            margin-bottom: 5%;
+        }
+
+        #aboutAppContainer{
+            display: flex;
+            flex-direction: column;
+            width: 75vw;
+            text-align: center;
+            margin-left: 2%;
+            margin-bottom: 2%;
+        }
+
+        .aboutAppContainerLines p{
+            font-size: 12px;
+        }
+
+        #blackPartContainer div{
+            font-size: 9px;
+            text-align: center;
+        }
+
+        #blackPartContainer button{
+            height: 6.88vh;
+            width: 19.83vw;
+        }
+
+        #socialMediaIcons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 15%;
+            gap: 25%;
+        }
+
+        #socialMediaIcons img{
+            height: 35px;
+            width: 40px;
+        }
+    }
+
+    @media only screen and (min-width: 375px) and (max-width: 767px){
+    
+    }
+    
+ 
+
+   
