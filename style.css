@@ -45,7 +45,7 @@
     }
 
     #stadiumImage img{
-        width: 100vw;
+        width: 100%;
         height: 96.8vh;
         margin-top: -10%;
         position: absolute;
@@ -59,14 +59,19 @@
         margin: 0;
     }
 
+    #pictureContentContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
     #contentOnPic{
         position: absolute;
         z-index: 3;
         display: flex;
         flex-direction: column;
         color: #FFFFFF;
-        margin-left: 10%;
         margin-top: 6%;
+        margin-left: 15%;
     }
 
     #contentOnPic2{
@@ -75,20 +80,21 @@
         display: flex;
         flex-direction: column;
         color: #FFFFFF;
-        margin-left: 10%;
         margin-top: 15%;
-        font-size: larger;
+        justify-content: flex-start;
+        font-size: 15px;
+        margin-left: 15%;
     }
 
     #descriptionAboutStadium{
-        width: 60vw;
+        width: 70vw;
     }
 
     #btnsContainer{
         display: flex;
         flex-direction: row;
         align-content: space-between;
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     #btnsContainer  button{
@@ -119,7 +125,7 @@
         border: 1px solid #178A1F;
         border-radius: 3px;
         margin-left: 30%;
-        margin-top: 7%;
+        margin-top: 1%;
     }
 
     #contentOnPic h3{
@@ -219,13 +225,21 @@
     }
 
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
         #navbar a{
             margin-left: 10%;
+            font-size: 14px;
         }
         
         #contentOnPic{
             margin-left: 35%;
+        }
+
+        #stadiumImage img {
+            height: 75vh;
+        }
+        #stadiumImage {
+            height: 61vh;
         }
 
         #line{
@@ -238,9 +252,9 @@
         #descriptionAboutStadium{
             width: 43.15vw;
             font-size: 13px;
-            margin-top: 10%;
-            margin-left: 40%;
-            justify-content: center;
+            margin-top: 20%;
+            margin-left: 32%;
+            text-align: center;
         }
 
         #btn2{
@@ -248,31 +262,34 @@
         }
 
         #btnsContainer{
-            margin-left: 65%;
+            margin-left: 45%
         }
 
         #btnsContainer  button{
             height: 10.5vh;
-            width: 19vw;
+            width: 25vw;
         }
 
         #mainContentContainer h1{
             font-size: 20px;
-            margin-top: 7%;
+            margin-top: 15%;
             margin-bottom: 5%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #aboutAppContainer{
             display: flex;
             flex-direction: column;
-            width: 75vw;
+            width: 90vw;
             text-align: center;
             margin-left: 2%;
             margin-bottom: 2%;
         }
 
         .aboutAppContainerLines p{
-            font-size: 12px;
+            font-size: 10px;
+            text-align: center;
         }
 
         #blackPartContainer div{
@@ -293,14 +310,104 @@
             gap: 25%;
         }
 
+        #mainContentContainer{
+            margin-top: 40%;
+        }
+
         #socialMediaIcons img{
             height: 35px;
             width: 40px;
         }
     }
 
-    @media only screen and (min-width: 375px) and (max-width: 767px){
-    
+    @media only screen and (max-width: 479px){
+        #navbar{
+            padding-left: 1%;
+        }
+
+        #linksContainer{
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+        }
+
+        #linksContainer img{
+            margin-left: 10%;
+        }
+
+        #navbar a:nth-child(n+2){
+            visibility: hidden;
+        }
+
+        #burgerMenuIcon{
+            visibility: visible;
+        }
+
+        #contentOnPic h1{
+            margin-right: 25%;
+            margin-right: 0;
+        }
+
+        #contentOnPic2{
+            align-items: center;
+            font-size: 11px;
+        }
+
+        #line{
+            width: 25vw;
+            margin-left: 45%;
+        }
+
+        #descriptionAboutStadium{
+            margin-left: 10%;
+            margin-top: 20%;
+            text-align: center;
+        }
+
+        #btnsContainer button{
+            height: 9.03vh;
+            width: 28.19vw;
+            margin-left: 55%;
+        }
+
+        #btn2{
+            visibility: hidden;
+        }
+
+        #stadiumImage img {
+            height: 71vh;
+        }
+        #stadiumImage {
+            height: 61vh;
+        }
+
+        .aboutAppContainerLines p{
+            font-size: 8px;
+        }
+
+        #blackPartContainer h3{
+            font-size: 15px;
+        }
+
+        #blackPartContainer button{
+            height: 8vh;
+            width: 40vw;
+            margin-left: 15%;
+        }
+
+        #footerContainer{
+            height: 48.96vh;
+        }
+
+        #footerFirstPart{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #footerListing a{
+            margin-top: 5%;
+            text-decoration: none;
+        }
     }
     
  

@@ -141,7 +141,7 @@ body{
     }
 
     #line{
-        width: vw;
+        width: 14.64vw;
         border-radius: 3px;
         margin-left: 40%;
         margin-top: 2%;
@@ -183,6 +183,50 @@ body{
 
 }
 
-@media only screen and (min-width: 375px) and (max-width: 767px){
-    
+@media only screen and (max-width: 479px){
+    #navbar{
+        padding-left: 1%;
+    }
+
+    #linksContainer{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+    }
+
+    #linksContainer img{
+        margin-left: 10%;
+    }
+
+    #navbar a:nth-child(n+2){
+        visibility: hidden;
+    }
+
+    #burgerMenuIcon{
+        visibility: visible;
+    }
+
+    #ourAppParagraphContainer p{
+        font-size: 15px;
+    }
+
+    #signUpBtn{
+        height: 9.03vh;
+        width: 48vw;
+        margin-left: 0%;
+    }
+
+    #footerContainer{
+        height: 48.96vh;
+    }
+
+    #footerFirstPart{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerListing a{
+        margin-top: 5%;
+        text-decoration: none;
+    }
 }

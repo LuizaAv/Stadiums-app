@@ -24,15 +24,14 @@ body{
 
 #navbar a{
     text-decoration: none;
-    color: #000000;
     margin-left: 5%;
 }
 
-#navbar a:nth-child(n + 2){
+.greyLink{
     color: #D3D3D3;
 }
 
-#navbar a:nth-child(n + 4){
+.blackLink{
     color: #000000;
 }
 
@@ -192,6 +191,47 @@ body{
     }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 767px){
-    
+
+@media only screen and (max-width: 479px){
+    #navbar{
+        padding-left: 1%;
+    }
+
+    #linksContainer{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+    }
+
+    #linksContainer img{
+        margin-left: 10%;
+    }
+
+    #navbar a:nth-child(n+2){
+        visibility: hidden;
+    }
+
+    #burgerMenuIcon{
+        visibility: visible;
+    }
+
+    #contactUsBtn{
+        height: 9.03vh;
+        width: 48vw;
+        margin-left: 0%;
+    }
+
+    #footerContainer{
+        height: 48.96vh;
+    }
+
+    #footerFirstPart{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerListing a{
+        margin-top: 5%;
+        text-decoration: none;
+    }
 }
